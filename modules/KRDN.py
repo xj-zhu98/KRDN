@@ -4,7 +4,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_scatter import scatter_mean, scatter_sum, scatter_softmax
-# from .hyperbolic import *
 import time
 import math
 import sklearn
