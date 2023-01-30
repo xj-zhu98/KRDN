@@ -35,8 +35,8 @@ def parse_args():
 
     parser.add_argument('--num_neg_sample', type=int, default=400, help='the number of negative sample')
     parser.add_argument('--margin', type=float, default=0.8, help='the margin of contrastive_loss')
-    parser.add_argument('--loss_f', nargs="?", default="single_contrastive_loss",
-                        help="Choose a loss function:[inner_bpr, dis_bpr, contrastive_loss, single_contrastive_loss]")
+    parser.add_argument('--loss_f', nargs="?", default="contrastive_loss",
+                        help="Choose a loss function:[inner_bpr, contrastive_loss]")
 
     # ===== save model ===== #
     parser.add_argument("--save", type=bool, default=False, help="save model or not")
