@@ -19,7 +19,7 @@ class Aggregator(nn.Module):
         self.n_users = n_users
         self.n_items = n_items
         self.gamma = gamma
-        self.max_iter = max_iter
+        self.max_iter = int(max_iter)
         self.W1 = nn.Linear(64, 64)
         self.W2 = nn.Linear(64, 64)
         self.activation = nn.LeakyReLU()
