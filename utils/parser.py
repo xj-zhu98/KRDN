@@ -15,7 +15,7 @@ def parse_args():
     parser.add_argument('--dim', type=int, default=64, help='embedding size')
     parser.add_argument('--l2', type=float, default=1e-5, help='l2 regularization weight')
     parser.add_argument('--lr', type=float, default=0.0001, help='learning rate')
-    parser.add_argument('--gamma', type=float, default=0.2, help='drop threshold')
+    parser.add_argument('--gamma', type=float, default=0.3, help='drop threshold')
     parser.add_argument('--max_iter', type=float, default=1, help='iteration times')
     parser.add_argument("--inverse_r", type=bool, default=True, help="consider inverse relation or not")
     parser.add_argument("--node_dropout", type=bool, default=True, help="consider node dropout or not")
